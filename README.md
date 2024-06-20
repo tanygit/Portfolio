@@ -3,7 +3,7 @@
 Welcome to the repository for my personal portfolio website!
 ## Demo
 
-You can view a live demo of the portfolio website at https://tanygit.github.io/tanmayms.github.io/
+You can view a live demo of the portfolio website at https://tanygit.github.io/Portfolio/
 ## Technologies Used
 
 - HTML5

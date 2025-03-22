@@ -1,197 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanmay M S</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" href="icon.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="title-icon.png" type="image/x-icon" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo"><font face="Stencil">Tanmay M S </font></div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">
+        &lt;&nbsp;<font face="Vladimir Script">Tanmay M S </font>&nbsp;<font
+          face="Automania"
+          >&sol;</font
+        >&#62;
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">Tanmay M S</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="togglemenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="togglemenu()">About</a></li>
-                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
-                <li><a href="#project" onclick="togglemenu()">Project</a></li>
-                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
-            </div>
+      <div class="logo">Tanmay M S</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="togglemenu()">About</a></li>
+          <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+          <li><a href="#project" onclick="togglemenu()">Project</a></li>
+          <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
-    
-    <section id="profile">
-        <div class="section_pic-container">
-            <img src="Photo.jpg" alt="Tanmay M S Profile picture" class="profile-picture">
-        </div>
-        <div class="section-text">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class ="title">Tanmay M S</h1>
-            <p class="section_text_p2">Freshman At RVU</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('resume.pdf')">Download CV</button>
 
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
-            </div>
-            <div id="socials-container">
-                <img src="./linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/tanmay-manchale-597a7a280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">
-                <img src="./github.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://github.com/tanygit'">
-            </div>
+    <section id="profile">
+      <div class="section_pic-container">
+        <img
+          src="images/Photo.jpg"
+          alt="Tanmay M S Profile picture"
+          class="profile-picture"
+        />
+      </div>
+      <div class="section-text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Tanmay M S</h1>
+        <p class="section_text_p2">Sophomore at RVU SOCSE</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('resume.pdf')">
+            Download CV
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact
+          </button>
         </div>
+        <div id="socials-container">
+          <img
+            src="./images/linkedin.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/tanmay-m-s-597a7a280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"
+          />
+          <img
+            src="./images/github.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="location.href='https://github.com/tanygit'"
+          />
+        </div>
+      </div>
     </section>
 
     <section id="about">
-        <p class="section_text_p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="Photo 1.jpg" alt="Profile Picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-               <div class="about-containers">
-                 <div class="details-container">
-                    <img src="language.png" alt="Experience icon" class="icon">
-                    <h3>Spoken Languages</h3>
-                    <p>English <br>Kannada<br>Hindi</p>
-                 </div>
-                 <div class="details-container">
-                    <img src="education.png" alt="Experience icon" class="icon">
-                    <h3>Education</h3>
-                    <p>B.Tech at RV University<br>PUC at VSPUC</p>
-                 </div>
-               </div> 
-                <div class="text-container">
-                    <p>Hi there! I am Tanmay M S,Embarking on my BTech journey with enthusiasm and curiosity. A first-semester student eager to absorb the foundations of Computer Science.Excited about exploring diverse facets of engineering and technology. Ready to embrace challenges, learn, and grow. Looking forward to building a strong foundation and making the most of this educational adventure</p>
-                </div>
-            </div>
+      <p class="section_text_p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="images/Photo 1.jpg"
+            alt="Profile Picture"
+            class="about-pic"
+          />
         </div>
-        <img src="down-arrow.png" alt="Arrow-icon" class="icon arrow" onclick="location.href='#experience'">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="images/language.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Spoken Languages</h3>
+              <p>English <br />Kannada<br />Hindi</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="images/education.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech at RV University<br />PUC at VSPUC</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi there! I am Tanmay M S,Embarking on my BTech journey with
+              enthusiasm and curiosity. A first-semester student eager to absorb
+              the foundations of Computer Science.Excited about exploring
+              diverse facets of engineering and technology. Ready to embrace
+              challenges, learn, and grow. Looking forward to building a strong
+              foundation and making the most of this educational adventure
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/down-arrow.png"
+        alt="Arrow-icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
     </section>
 
     <section id="experience">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">
-                        Frontend Development
-                    </h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="checked.png" alt="experience-icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="checked.png" alt="experience-icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="checked.png" alt="experience-icon" class="icon">
-                            <div>
-                                <h3>JS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="images/checked.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">
-                        General Purpose Languages
-                    </h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="checked.png" alt="experience-icon" class="icon">
-                            <div>
-                                <h3>C</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="checked.png" alt="experience-icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="images/checked.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="images/checked.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">General Purpose Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="images/checked.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checked.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img src="down-arrow.png" alt="Arrow-icon" class="icon arrow" onclick="location.href='#project'">
+      </div>
+      <img
+        src="images/down-arrow.png"
+        alt="Arrow-icon"
+        class="icon arrow"
+        onclick="location.href='#project'"
+      />
     </section>
 
     <section id="project">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Project</h1>
-        <div class="experience-details-container">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="heart-attack.jpeg" alt="Project 1" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Heart Attack Data Analysis Using Python</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tanygit/heart-attack'">GITHUB</button>
-                </div>
-
-            </div>
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Project</h1>
+      <div class="experience-details-container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="images/heart-attack.jpeg"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Heart Attack Data Analysis Using Python
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/tanygit/heart-attack'"
+            >
+              GITHUB
+            </button>
+          </div>
         </div>
-        <img src="down-arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+      </div>
+      <img
+        src="images/down-arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
     </section>
 
     <section id="contact">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="mail.png" alt="email-icon" class="icon contact-icon">
-                <p><a href="mailto:tanmayms.btech23@rvu.edu.in">tanmayms.btech23@rvu.edu.in</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="linkedin.png" alt="linkedin-icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/tanmay-manchale-597a7a280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
-            </div>
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="images/mail.png"
+            alt="email-icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:tanmayms.btech23@rvu.edu.in"
+              >tanmayms.btech23@rvu.edu.in</a
+            >
+          </p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="images/linkedin.png"
+            alt="linkedin-icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/tanmay-m-s-597a7a280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav> 
-        <p>Made with <font color="red">&#x2764;</font> by Tanmay MS</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Made with <font color="red">&#x2764;</font> by Tanmay MS</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

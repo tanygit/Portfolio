@@ -75,7 +75,7 @@ a:hover {
   vertical-align: -10%;
   width: 0;
   font-weight: normal;
-  animation: typing 2.5s steps(14, end) forwards, blink 0.7s infinite;
+  animation: typing 2s steps(14, end) forwards, blink 0.7s infinite;
   animation-fill-mode: forwards;
 }
 

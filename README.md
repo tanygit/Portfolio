@@ -15,4 +15,4 @@ You can view a live demo of the portfolio website at https://tanygit.github.io/P
 - Skills section
 - Project showcase
 
-*Note: This portfolio is a work in progress, and I am actively working on improving it. Check back for updates!*
+Inspired by: https://www.youtube.com/watch?v=ldwlOzRvYOU

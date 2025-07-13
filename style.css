@@ -212,7 +212,7 @@ section {
   border-radius: 50%;
   border: 5px solid black;
   padding: 5px;
-  background-image: linear-gradient(to right, #a1e5fc, #a1e5fc);
+  background-image: linear-gradient(to right, #e2e0e0, #dbd8d8);
 }
 
 .section-text {

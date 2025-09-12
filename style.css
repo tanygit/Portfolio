@@ -505,7 +505,7 @@ footer p {
   display: inline-block;
   transform: translateY(-200px);
   opacity: 0;
-  animation: flyin 0.8s forwards; /* ensure 'forwards' keeps final state */
+  animation: flyin 0.8s forwards;
 }
 
 /* Sequential delay for each letter */

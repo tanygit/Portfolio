@@ -114,4 +114,15 @@
     width: 150px;
     align-items: center;
   }
+  .flyin-text-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .flyin-text-container .letter {
+    flex: none;
+    display: inline-block;
+  }
 }

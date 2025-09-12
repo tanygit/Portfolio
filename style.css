@@ -75,7 +75,7 @@ a:hover {
   vertical-align: -10%;
   width: 0;
   font-weight: normal;
-  animation: typing 2s steps(14, end) forwards, blink 0.7s infinite;
+  animation: typing 4s steps(25, end) forwards, blink 0.7s infinite;
   animation-fill-mode: forwards;
 }
 
@@ -473,4 +473,184 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Preloader fly-in text with underline */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 18, 18, 1); /* fully black initially */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  overflow: hidden;
+  animation: fadeBackground 4s forwards; /* gradual fade */
+}
+
+.flyin-text-container {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.letter {
+  display: inline-block;
+  transform: translateY(-200px);
+  opacity: 0;
+  animation: flyin 0.8s forwards; /* ensure 'forwards' keeps final state */
+}
+
+/* Sequential delay for each letter */
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+.letter:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.letter:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.letter:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.letter:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.letter:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.letter:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.letter:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.letter:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.letter:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.letter:nth-child(11) {
+  animation-delay: 1s;
+}
+.letter:nth-child(12) {
+  animation-delay: 1.1s;
+}
+.letter:nth-child(13) {
+  animation-delay: 1.2s;
+}
+.letter:nth-child(14) {
+  animation-delay: 1.3s;
+}
+.letter:nth-child(15) {
+  animation-delay: 1.4s;
+}
+.letter:nth-child(16) {
+  animation-delay: 1.5s;
+}
+.letter:nth-child(17) {
+  animation-delay: 1.6s;
+}
+.letter:nth-child(18) {
+  animation-delay: 1.7s;
+}
+.letter:nth-child(19) {
+  animation-delay: 1.8s;
+}
+.letter:nth-child(20) {
+  animation-delay: 1.9s;
+}
+.letter:nth-child(21) {
+  animation-delay: 2s;
+}
+.letter:nth-child(22) {
+  animation-delay: 2.1s;
+}
+.letter:nth-child(23) {
+  animation-delay: 2.2s;
+}
+.letter:nth-child(24) {
+  animation-delay: 2.3s;
+}
+
+/* Underline animation */
+.underline {
+  width: 0;
+  height: 3px;
+  background: white;
+  animation: underlineAnim 1s forwards;
+  animation-delay: 3s; /* after letters finish flying in */
+}
+
+/* fly-in animation keyframes */
+@keyframes flyin {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  } /* make sure opacity stays 1 */
+}
+
+@keyframes fadeBackground {
+  0% {
+    background: rgba(17, 18, 18, 1);
+  } /* fully black */
+  80% {
+    background: rgba(20, 21, 21, 0.85);
+  } /* barely revealing portfolio */
+  100% {
+    background: rgba(12, 13, 13, 0.85);
+  } /* keep subtle until preloader removed */
+}
+
+@keyframes underlineAnim {
+  to {
+    width: 100%;
+  }
+}
+
+/* Profile pop-in effect */
+#profile {
+  opacity: 0; /* start hidden */
+  transform: scale(0.95); /* slightly smaller */
+  transition: none; /* we'll control via class */
+}
+
+/* When class 'visible' is added */
+#profile.visible {
+  animation: popIn 0.8s forwards;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

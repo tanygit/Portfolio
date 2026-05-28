@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -60,7 +60,7 @@
         <ul class="nav-links">
           <li><a href="#profile">Profile</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#publications">Publications</a></li>
           <li><a href="#project">Project</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -77,7 +77,9 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="togglemenu()">About</a></li>
-          <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+          <li>
+            <a href="#publications" onclick="togglemenu()">Publications</a>
+          </li>
           <li><a href="#project" onclick="togglemenu()">Project</a></li>
           <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
         </div>
@@ -97,11 +99,7 @@
         <h1 class="title">Tanmay M S</h1>
         <p class="section_text_p2">Student at RV University</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('Resume.pdf')">
-            Download CV
-          </button>
-
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
+          <button class="btn btn-color-1" onclick="location.href = '#contact'">
             Contact
           </button>
         </div>
@@ -110,13 +108,16 @@
             src="./images/linkedin.png"
             alt="My Linkedin Profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/tanmay-m-s-597a7a280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"
+            onclick="
+              location.href =
+                'https://www.linkedin.com/in/tanmay-m-s-597a7a280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+            "
           />
           <img
             src="./images/github.png"
             alt="My Linkedin Profile"
             class="icon"
-            onclick="location.href='https://github.com/tanygit'"
+            onclick="location.href = 'https://github.com/tanygit'"
           />
         </div>
       </div>
@@ -143,16 +144,14 @@
           </div>
         </div>
         <div class="text-container">
-          <p>
+          <p class="about-text">
             Hi there! I am Tanmay M S, embarking on my BTech journey with
-            enthusiasm and curiosity. Passionate about problem-solving, coding,
-            and innovative technologies, I am always eager to explore new
-            advancements in Computer Science. I enjoy working on projects that
-            challenge my thinking and enhance my technical skills. Beyond
-            academics, I believe in continuous learning, collaboration, and
-            building creative solutions. My goal is to develop a strong
-            foundation in engineering while contributing to impactful projects
-            and growing as a well-rounded professional.
+            enthusiasm and curiosity. I am interested in Computer vision and
+            machine learning, including image processing, visual recognition,
+            real-time inference, and semantic understanding of visual data. I am
+            particularly interested in efficient model design, on-device
+            intelligence, and applying learning-based methods to solve
+            real-world problems.
           </p>
         </div>
       </div>
@@ -160,11 +159,11 @@
         src="images/down-arrow.png"
         alt="Arrow-icon"
         class="icon arrow"
-        onclick="location.href='#experience'"
+        onclick="location.href = '#publications'"
       />
     </section>
 
-    <section id="experience">
+    <!-- <section id="experience">
       <p class="section_text_p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
@@ -240,7 +239,64 @@
         src="images/down-arrow.png"
         alt="Arrow-icon"
         class="icon arrow"
-        onclick="location.href='#project'"
+        onclick="location.href = '#project'"
+      />
+    </section> -->
+
+    <section id="publications">
+      <p class="section_text_p1">Browse My</p>
+      <h1 class="title">Publications</h1>
+
+      <div class="publication-container">
+        <!-- Publication Row -->
+        <div class="publication-box">
+          <div class="publication-meta">
+            <div class="publication-title">
+              Accident Detection and Emergency Support System for Scooters Based
+              on Edge AI Technology
+            </div>
+
+            <div class="publication-subtitle">ICT4SD — 2025</div>
+          </div>
+
+          <div class="publication-links">
+            <a
+              href="https://doi.org/10.1007/978-3-032-06691-6_25"
+              target="_blank"
+              class="publication-btn"
+            >
+              SPRINGER
+            </a>
+          </div>
+        </div>
+
+        <!-- Publication Row -->
+        <div class="publication-box">
+          <div class="publication-meta">
+            <div class="publication-title">
+              Conditional-WGAN-GP For Balanced Tabular Data Generation with
+              Explainability
+            </div>
+
+            <div class="publication-subtitle">IMED — 2026</div>
+          </div>
+
+          <div class="publication-links">
+            <a
+              href="https://doi.org/10.1109/IMED68921.2026.11484277"
+              target="_blank"
+              class="publication-btn"
+            >
+              IEEE
+            </a>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/down-arrow.png"
+        alt="Arrow-icon"
+        class="icon arrow"
+        onclick="location.href = '#project'"
       />
     </section>
 
@@ -248,12 +304,40 @@
       <p class="section_text_p1">Browse My</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <!-- 1st Project -->
+        <!-- Project-1 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="images/mayura.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Kannada Language Adaptation of Gemma3 4B Model
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = 'https://github.com/tanygit/Mayura-4B'"
+            >
+              GITHUB
+            </button>
+
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="
+                location.href =
+                  'https://medium.com/@vaibhav.mugulavalli/how-i-trained-a-kannada-first-4b-language-model-using-gemma-3-e58dc30978c0'
+              "
+            >
+              MEDIUM
+            </button>
+          </div>
+        </div>
+
+        <!-- Project-2 -->
         <div class="details-container color-container">
           <div class="article-container">
             <img
               src="images/accident.avif"
-              alt="Project 1"
+              alt="Project 2"
               class="project-img"
             />
           </div>
@@ -263,17 +347,20 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/tanygit/Accident-Detection-System'"
+              onclick="
+                location.href =
+                  'https://github.com/tanygit/Accident-Detection-System'
+              "
             >
               GITHUB
             </button>
           </div>
         </div>
 
-        <!-- 2nd Project -->
+        <!-- Project-3 -->
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="images/toh.png" alt="Project 2" class="project-img" />
+            <img src="images/toh.png" alt="Project 3" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">
             Tower Of Hanoi in Java with GUI
@@ -281,17 +368,19 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/tanygit/Tower-Of-Hanoi'"
+              onclick="
+                location.href = 'https://github.com/tanygit/Tower-Of-Hanoi'
+              "
             >
               GITHUB
             </button>
           </div>
         </div>
 
-        <!-- 3rd Project -->
+        <!-- Project-4 -->
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="images/AL.png" alt="Project 3" class="project-img" />
+            <img src="images/AL.png" alt="Project 4" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">
             Exploring Sparse Sub-Networks in Deep Learning through Edge-Popup,
@@ -300,19 +389,21 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/Neeraj1437/edge-lottery-al'"
+              onclick="
+                location.href = 'https://github.com/Neeraj1437/edge-lottery-al'
+              "
             >
               GITHUB
             </button>
           </div>
         </div>
 
-        <!-- 4th Project -->
+        <!-- Project-5 -->
         <div class="details-container color-container">
           <div class="article-container">
             <img
               src="images/heart-attack.jpeg"
-              alt="Project 4"
+              alt="Project 5"
               class="project-img"
             />
           </div>
@@ -322,17 +413,19 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/tanygit/final_heart_attack'"
+              onclick="
+                location.href = 'https://github.com/tanygit/final_heart_attack'
+              "
             >
               GITHUB
             </button>
           </div>
         </div>
 
-        <!-- 5th Project -->
+        <!-- Project-6 -->
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="images/CIRS.jpg" alt="Project 5" class="project-img" />
+            <img src="images/CIRS.jpg" alt="Project 6" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">
             Crime Investigation and Reporting System
@@ -340,17 +433,20 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/tanygit/Crime-Investigation-and-Reporting-System'"
+              onclick="
+                location.href =
+                  'https://github.com/tanygit/Crime-Investigation-and-Reporting-System'
+              "
             >
               GITHUB
             </button>
           </div>
         </div>
 
-        <!-- 6th Project -->
+        <!-- Project-7 -->
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="images/Pet.jpg" alt="Project 6" class="project-img" />
+            <img src="images/Pet.jpg" alt="Project 7" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">
             Pet Care Management System
@@ -358,7 +454,7 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/tanygit/Pet-Pulse'"
+              onclick="location.href = 'https://github.com/tanygit/Pet-Pulse'"
             >
               GITHUB
             </button>
@@ -369,7 +465,7 @@
         src="images/down-arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='#contact'"
+        onclick="location.href = '#contact'"
       />
     </section>
 
@@ -410,7 +506,7 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
             <li><a href="#project">Project</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>

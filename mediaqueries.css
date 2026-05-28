@@ -126,4 +126,15 @@
     flex: none;
     display: inline-block;
   }
+
+  .publication-box {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .publication-title {
+    max-width: 100%;
+  }
 }
+
